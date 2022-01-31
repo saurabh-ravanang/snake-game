@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Dongle&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url(../img/bg.jpg)no-repeat center center/cover;
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#scorebox{
+    position: absolute;
+    top: 90px;
+    right: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Dongle', sans-serif;
+    /* color: white; */
+}
+#hiscorebox{
+    position: absolute;
+    top: 150px;
+    right: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Dongle', sans-serif;
+}
+#board{
+    background: linear-gradient(rgb(118, 202, 118), rgb(196, 196, 110));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+.head{
+    background-color: red;
+    border: .25vmin solid black;
+    border-radius: 10px;
+}
+.snake{
+    background-color: green;
+    border: .25vmin solid white;
+}
+.food{
+    background-color: orange;
+    border: .25vmin solid black;
+}
